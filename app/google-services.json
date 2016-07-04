@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "515225380935",
+    "project_id": "donates-bc88d"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515225380935:android:acb986ba57998be3",
+        "android_client_info": {
+          "package_name": "com.beebox.blood.shewalfare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbXpHbtgJDKcce-j7Fh3S5EtYh6-HUcxA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

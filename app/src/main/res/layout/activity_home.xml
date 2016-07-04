@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="45"
+        android:background="@android:color/holo_red_dark"
+
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+             >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/drop"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/logoid"
+                />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoid"
+        android:text="She Welfare Trust"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:id="@+id/shewelfatetitle"
+        />
+
+
+</RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="55"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are You a Donor ?"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textdonor"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textdonor"
+                android:layout_centerHorizontal="true"
+                android:text="Register"
+                android:background="@android:color/holo_red_dark"
+                android:id="@+id/donateblood"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/donateblood"
+                android:text="Urgent Search"
+                android:textSize="25sp"
+
+                android:layout_centerHorizontal="true"
+                android:id="@+id/searchtext"
+                />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchtext"
+                android:id="@+id/spinnerblood"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/bootstrap_brand_success"
+
+                >
+
+
+            </Spinner>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerblood"
+                android:text="Search"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_dark"
+                android:layout_marginTop="5dp"
+                android:id="@+id/request"
+                android:layout_alignEnd="@+id/donateblood"
+                android:layout_alignRight="@+id/donateblood"
+                android:layout_alignLeft="@+id/donateblood"
+                android:layout_alignStart="@+id/donateblood" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

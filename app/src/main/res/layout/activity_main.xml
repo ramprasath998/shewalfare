@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:background="#C91C08"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.beebox.blood.shewalfare.MainActivity">
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_above="@+id/click"
+    android:id="@+id/mainrelate2"
+    >
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:text="Enter Your Details"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        />
+
+<com.beardedhen.androidbootstrap.BootstrapEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:bootstrapSize="md"
+    app:roundedCorners="true"
+    app:bootstrapBrand="danger"
+    android:id="@+id/name"
+    android:hint="Name"
+    android:layout_below="@+id/register"
+
+
+    android:inputType="textPersonName|textCapSentences"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="40dp"
+    android:gravity="center"
+
+
+    />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/blood"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@color/bootstrap_brand_success"
+
+        />
+
+
+
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="20dp"
+        app:bootstrapSize="md"
+        app:roundedCorners="true"
+        app:bootstrapBrand="danger"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/phone"
+        android:gravity="center"
+
+        />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/blood"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        android:hint="Email"
+        app:bootstrapSize="md"
+        app:roundedCorners="true"
+        app:bootstrapBrand="danger"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="20dp"
+        android:hint="City"
+        android:id="@+id/city"
+        app:bootstrapSize="md"
+        app:roundedCorners="true"
+
+        app:bootstrapBrand="danger"
+        android:inputType="text|textCapSentences"
+        android:layout_margin="10dp"
+        android:gravity="center"
+
+
+        />
+
+
+</RelativeLayout>
+
+<com.beardedhen.androidbootstrap.BootstrapButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="Donate"
+    android:gravity="center"
+    android:id="@+id/click"
+    android:textColor="#FFF"
+    android:layout_margin="15dp"
+    android:background="#2C3E50"
+    app:bootstrapBrand="success"
+    app:bootstrapSize="md"
+
+
+    />
+
+</RelativeLayout>

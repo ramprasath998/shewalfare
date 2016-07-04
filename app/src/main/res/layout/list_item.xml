@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="1dp"
+        app:cardElevation="5dp"
+        android:background="#00000000"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/donorsid"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aligname"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Name "
+                android:id="@+id/name"
+                android:textColor="#000"
+                android:maxLength="5"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/showname"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/name"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/name"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alignemail"
+            android:layout_below="@+id/aligname"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Blood "
+                android:id="@+id/email"
+                android:textColor="#000"
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/showemail"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_alignBottom="@+id/email"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/email"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/email"
+
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alignphone"
+            android:layout_below="@+id/alignemail"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Phone "
+                android:id="@+id/phone"
+                android:textColor="#000"
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/showphone"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_alignBottom="@+id/phone"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/phone"
+
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/phone" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aligncompany"
+            android:layout_below="@+id/alignphone"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="City     "
+                android:id="@+id/company"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/showcompany"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_alignBottom="@+id/company"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/company"
+                android:layout_toEndOf="@+id/company" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alignrating"
+                android:layout_below="@+id/aligncompany"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingtext"
+                    android:text="User Ratings"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/listrate"
+                    android:textSize="20sp"
+                    android:background="@drawable/textview_circle"
+                    android:gravity="center"
+
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+           </android.support.v7.widget.CardView>
+
+</LinearLayout>

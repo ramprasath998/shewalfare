@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.beebox.blood.shewalfare.BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    app:bootstrapText="Add Donor Details"
+                    android:id="@+id/donorfragment1"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapSize="lg"
+                    app:roundedCorners="true"
+                    />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/donorfragment1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:bootstrapText="Add Donations"
+            android:layout_alignRight="@+id/donorfragment1"
+            android:layout_alignLeft="@+id/donorfragment1"
+            android:layout_alignStart="@+id/donorfragment1"
+            android:layout_alignEnd="@+id/donorfragment1"
+            android:id="@+id/donorfragment2"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:bootstrapText="History"
+            android:layout_alignRight="@+id/donorfragment1"
+            android:layout_alignLeft="@+id/donorfragment1"
+            android:layout_alignStart="@+id/donorfragment1"
+            android:layout_alignEnd="@+id/donorfragment1"
+            android:id="@+id/donorfragment3"
+            android:layout_below="@+id/donorfragment2"
+            android:layout_marginTop="10dp"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

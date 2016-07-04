@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        card_view:cardUseCompatPadding="true"
+        android:background="#00000000"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_horizontal_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Name "
+                android:id="@+id/name1"
+
+                android:textColor="#000"
+                android:maxLength="5"
+                android:textStyle="bold"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showpatientname"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:hint="name"
+                android:maxLines="1"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Blood "
+                android:id="@+id/email1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showpatientblood"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:hint="name"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+
+
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Unit "
+                android:id="@+id/phone1"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showunit"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:hint="name"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+             />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Date   "
+                android:id="@+id/company1"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showdate"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:maxLines="1"
+                android:hint="name"
+
+                android:layout_marginTop="10dp"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingtext1"
+                    android:text="Purpose"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:maxLines="1"
+
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showpurpose"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:hint="name"
+                    android:gravity="start|end|left|right"
+                    android:maxLines="1"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/room"
+                    android:text="Room no"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showroomno"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    android:hint="name"
+                    android:gravity="start|end|left|right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="1"
+                    />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attendarname"
+                android:text="Attendar Name"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/showattendarname"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:gravity="start|end|left|right"
+                android:layout_marginTop="10dp"
+                android:hint="name"
+
+                android:textColor="#000"
+                android:maxLines="1"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Attendar Phone"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:id="@+id/attendarphone"
+                android:textStyle="bold"
+                android:maxLines="1"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start|end|left|right"
+                android:paddingLeft="10dp"
+                android:visibility="gone"
+                android:paddingRight="10dp"
+                android:hint="name"
+                android:maxLines="1"
+
+                android:textSize="20sp"
+                android:id="@+id/showattendarplace"
+                android:textColor="#000"
+                />
+
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hospitalname"
+                    android:text="Hospital Name"
+                    android:textSize="20sp"
+                    android:textColor="#000"
+                android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/showhospitalname"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:gravity="start|end|left|right"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="name"
+                    android:textColor="#000"
+
+                    android:maxLines="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hospitalplace"
+                    android:text="Hospital Location"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showhospitalplace"
+                    android:textSize="20sp"
+                    android:gravity="start|end|left|right"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+
+                    android:hint="name"
+                    android:maxLines="1"
+                    />
+
+           <com.beardedhen.androidbootstrap.BootstrapButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="View Request"
+               android:id="@+id/deleteid"
+               app:bootstrapBrand="primary"
+
+               />
+
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Share"
+                android:id="@+id/shareid"
+                app:bootstrapBrand="primary"
+
+                />
+            </LinearLayout>
+
+        </RelativeLayout>
+           </android.support.v7.widget.CardView>
+
+</LinearLayout>

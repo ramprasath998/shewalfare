@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.beebox.blood.shewalfare.BlankFragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            android:hint="Password"
+            android:id="@+id/adminpassword"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminpassword"
+            android:id="@+id/fragmentspinner"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@color/bootstrap_brand_success"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            >
+
+
+        </Spinner>
+
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:bootstrapText="View Donors"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        android:layout_margin="20dp"
+        app:roundedCorners="true"
+        android:layout_below="@+id/fragmentspinner"
+        android:id="@+id/viewbuttonfragment"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+            android:visibility="gone"
+
+        />
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:bootstrapText="Login"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            android:layout_margin="20dp"
+            app:roundedCorners="true"
+            android:layout_below="@+id/adminpassword"
+            android:id="@+id/passwordfragmentbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+
+
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

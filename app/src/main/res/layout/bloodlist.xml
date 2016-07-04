@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        card_view:cardUseCompatPadding="true"
+        android:clickable="true"
+        android:focusable="true"
+
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+
+
+
+            <TextView
+                android:text="Name"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/testname"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+
+
+            <TextView
+                android:id="@+id/testname1"
+
+                android:hint="Name"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/testname"
+
+
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+
+
+                />
+            <TextView
+                android:text="Blood"
+
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/testname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/testblood"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/testblood1"
+
+                android:hint="Blood"
+                android:layout_below="@+id/testblood"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_alignLeft="@+id/testblood"
+                android:layout_below="@+id/testblood1"
+                android:id="@+id/testphone"
+                android:textSize="17sp"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testphone"
+                android:textAlignment="center"
+                android:hint="Phone"
+                android:id="@+id/testphone1"
+                android:layout_alignLeft="@+id/testblood"
+
+                android:textSize="17sp"
+                />
+            <TextView
+                android:layout_alignLeft="@+id/testphone"
+                android:layout_alignStart="@+id/testphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/testphone1"
+                android:id="@+id/testcity"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testcity"
+                android:textAlignment="center"
+                android:hint="Place"
+                android:id="@+id/testcity1"
+                android:layout_alignStart="@+id/testphone"
+                android:layout_alignLeft="@+id/testphone"
+                android:textSize="17sp"
+                />
+
+
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/testcity1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="Call donor"
+                app:bootstrapBrand="success"
+                app:roundedCorners="true"
+
+                android:drawableLeft="@drawable/phonewhite"
+                android:background="@android:color/white"
+                android:id="@+id/viewdetails"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="10dp"
+
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

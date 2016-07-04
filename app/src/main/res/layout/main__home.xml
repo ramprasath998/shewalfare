@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+
+    tools:context="com.beebox.blood.shewalfare.Main_Home">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:paddingLeft="-10dp"
+
+
+    >
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/notes"
+        android:layout_marginTop="10dp"
+        android:id="@+id/regimage"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/regimage"
+        android:text="New Donor"
+        android:layout_alignLeft="@+id/searchdonortext"
+        android:layout_alignRight="@+id/searchdonortext"
+
+        android:layout_alignTop="@+id/regimage"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"
+        android:id="@+id/newdonortext"
+        />
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/plus"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/regimage"
+        android:id="@+id/searchimage"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/newdonortext"
+        android:layout_toRightOf="@+id/searchimage"
+        android:text="Search Donor"
+        android:background="@android:color/holo_orange_dark"
+
+        android:layout_alignTop="@+id/searchimage"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/searchdonortext"
+        android:textColor="@android:color/white"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/two"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/searchimage"
+        android:id="@+id/requestimage"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/searchdonortext"
+        android:layout_toRightOf="@+id/requestimage"
+        android:text="Make Request"
+
+        android:layout_alignTop="@+id/requestimage"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/searchdonortext"
+        android:layout_alignRight="@+id/searchdonortext"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:id="@+id/makerequesttext"
+        android:textColor="@android:color/white"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/medical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/requestimage"
+        android:id="@+id/viewrequest"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/makerequesttext"
+        android:layout_toRightOf="@+id/viewrequest"
+        android:text="View Request"
+
+        android:layout_alignTop="@+id/viewrequest"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/viewkrequeststext"
+        android:textColor="@android:color/white"
+
+        android:background="@android:color/holo_orange_dark"
+        android:layout_alignRight="@+id/searchdonortext"
+
+        />
+
+</RelativeLayout>
+
+
+</RelativeLayout>
